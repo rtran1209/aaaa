@@ -38,7 +38,7 @@ if [ "$CREATE_IPA_FILES" = true ] ; then
 
 	#zip contents
 	/usr/bin/zip -r $PRODUCT_NAME.ipa Payload
-	mv $PRODUCT_NAME.ipa "$APP_IPA_FOLDER++.ipa"
+	mv $PRODUCT_NAME.ipa "$APP_IPA_FOLDER.ipa"
 	rm -rf "$APP_IPA_FOLDER"
 
 fi
