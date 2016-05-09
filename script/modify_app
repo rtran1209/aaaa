@@ -33,7 +33,7 @@ PP_TWEAK_PATH="$BUILT_PRODUCTS_DIR/$TARGET_NAME.app/pptweak.dylib"
 HOOKED_APP_BUNDLE_ID=$(/usr/libexec/PlistBuddy -c "Print CFBundleIdentifier"  "$APP_PATH/Info.plist")
 
 HOOKED_APP_NAME=$(/usr/libexec/PlistBuddy -c "Print CFBundleDisplayName"  "$APP_PATH/Info.plist")
-HOOKED_APP_NAME="$HOOKED_APP_NAME ++"
+HOOKED_APP_NAME="$HOOKED_APP_NAME"
 
 HOOKED_EXECUTABLE=$(/usr/libexec/PlistBuddy -c "Print CFBundleExecutable"  "$APP_PATH/Info.plist")
 HOOKED_EXE_PATH="$BUILT_PRODUCTS_DIR/$TARGET_NAME.app/$HOOKED_EXECUTABLE"
