@@ -65,7 +65,7 @@ else
     echo "EXE IS EXECUTABLE"
 fi
 
-#change the display name to ++
+#change the display name to
 if [ "$KEEP_ORIGINAL_APP_NAME" != true ] ; then
     echo 'KEEP_ORIGINAL_APP_NAME IS NOT ENABLED'
     /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName $HOOKED_APP_NAME" "$BUILT_PRODUCTS_DIR/$TARGET_NAME.app/Info.plist"
